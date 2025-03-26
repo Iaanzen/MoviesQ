@@ -13,8 +13,8 @@ export default function MovieCard(props: Props) {
         <li className='movie-card'>
 
             <div className="movie-poster">
-                <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={movie.title} />
             </div>
+                <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={movie.title} />
 
             <div className="movie-infos">
                 <p className="movie-title">
@@ -26,8 +26,8 @@ export default function MovieCard(props: Props) {
                 <div className="hidden-content">
                     <p className='description'>
                         {movie.overview.length > 100
-                            ?`${movie.overview.substring(0, 100)}...`
-                            :movie.overview
+                            ? `${movie.overview.substring(0, 100)}...`
+                            : movie.overview
                         }
                     </p>
 
